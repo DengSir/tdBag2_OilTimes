@@ -1,0 +1,8 @@
+## Interface: 11306
+## Title: tdBag2 Oil Times
+## Author: Dencer
+## Version: @project-version@
+## Dependencies: tdBag2
+## X-tdBag2-Plugin: Oil Times
+
+Addon.lua

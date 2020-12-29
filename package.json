@@ -1,0 +1,26 @@
+{
+  "name": "tdbag2_oiltimes",
+  "version": "0.0.1",
+  "description": "Show oil times in tdBag2",
+  "main": "index.js",
+  "scripts": {
+    "build": "wct package"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DengSir/tdBag2_OilTimes.git"
+  },
+  "keywords": [
+    "tdBag2"
+  ],
+  "author": "Dencer",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/DengSir/tdBag2_OilTimes/issues"
+  },
+  "homepage": "https://github.com/DengSir/tdBag2_OilTimes#readme",
+  "wow": {
+    "name": "tdBag2_OilTimes",
+    "curse_id": 431970
+  }
+}
