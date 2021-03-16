@@ -17,8 +17,12 @@ local UIParent = UIParent
 
 local tonumber = tonumber
 
-local TimesScaner = CreateFrame('GameTooltip', 'tdBag2TimesScaner', UIParent, 'GameTooltipTemplate')
+local BankButtonIDToInvSlotID = BankButtonIDToInvSlotID
+
 local ITEM_SPELL_CHARGES_M = ITEM_SPELL_CHARGES:gsub('%%d', '(%%d+)')
+local BANK_CONTAINER = BANK_CONTAINER
+
+local TimesScaner = CreateFrame('GameTooltip', 'tdBag2TimesScaner', UIParent, 'GameTooltipTemplate')
 
 local ITEMS = {
     [20748] = true,
@@ -32,7 +36,11 @@ local ITEMS = {
 
 local function GetTimes(bag, slot)
     TimesScaner:SetOwner(UIParent, 'ANCHOR_NONE')
-    TimesScaner:SetBagItem(bag, slot)
+    if bag == BANK_CONTAINER then
+        TimesScaner:SetInventoryItem('player', BankButtonIDToInvSlotID(slot))
+    else
+        TimesScaner:SetBagItem(bag, slot)
+    end
 
     for i = 1, TimesScaner:NumLines() do
         local textLeft = _G['tdBag2TimesScanerTextLeft' .. i]
