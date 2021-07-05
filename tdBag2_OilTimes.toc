@@ -1,4 +1,9 @@
+#@debug@
 ## Interface: 11306
+## Version: 1.0.0
+#@end-debug@
+#@project-interface@
+#@project-version@
 ## Title: tdBag2 Oil Times
 ## Author: Dencer
 ## Version: @project-version@

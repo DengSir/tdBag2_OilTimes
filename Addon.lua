@@ -34,6 +34,12 @@ local ITEMS = {
     [20744] = true,
 }
 
+-- @bcc@
+ITEMS[22522] = true
+ITEMS[22521] = true
+ITEMS[22044] = true
+-- @end-bcc@
+
 local function GetTimes(bag, slot)
     TimesScaner:SetOwner(UIParent, 'ANCHOR_NONE')
     if bag == BANK_CONTAINER then
