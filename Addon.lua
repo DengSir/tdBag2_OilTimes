@@ -38,6 +38,9 @@ local ITEMS = {
 ITEMS[22522] = true
 ITEMS[22521] = true
 ITEMS[22044] = true
+
+ITEMS[34538] = true
+ITEMS[34539] = true
 -- @end-bcc@
 
 local function GetTimes(bag, slot)
