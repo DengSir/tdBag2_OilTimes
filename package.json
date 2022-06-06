@@ -1,6 +1,6 @@
 {
   "name": "tdbag2_oiltimes",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "Show oil times in tdBag2",
   "main": "index.js",
   "scripts": {
